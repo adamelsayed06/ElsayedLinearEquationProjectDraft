@@ -28,6 +28,15 @@ public class Main {
 
         LinearEquation calc = new LinearEquation (x1asInt,y1asInt,x2asInt,y2asInt);
 
+        System.out.println(calc.lineInfo());
+
+        System.out.println("");
+        System.out.println("Enter a value for x: ");
+        String xInput = scan.nextLine();
+
+        String yValue = calc.coordinateForX(Double.parseDouble(xInput));
+        System.out.println("The point on the line is (" + xInput + ", " + yValue + ")" );
+
 
     }
 }
