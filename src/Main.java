@@ -11,7 +11,7 @@ public class Main {
         int len1 = coords.length();
 
         String x1 = (coords.substring(1, a));
-        String y1 = (coords.substring(a+1, len1-1));
+        String y1 = (coords.substring(a+2, len1 - 1));
 
         System.out.println("Enter coordinate 2: ");
         String coords2 = scan.nextLine();
@@ -19,7 +19,7 @@ public class Main {
         int len2 = coords2.length();
 
         String x2 = (coords2.substring(1,b));
-        String y2 = (coords2.substring(b+1,len2-1));
+        String y2 = (coords2.substring(b+2,len2 - 1));
 
         int x1asInt = Integer.parseInt(x1);
         int x2asInt = Integer.parseInt(x2);
@@ -36,7 +36,5 @@ public class Main {
 
         String yValue = calc.coordinateForX(Double.parseDouble(xInput));
         System.out.println("The point on the line is (" + xInput + ", " + yValue + ")" );
-
-
     }
 }
